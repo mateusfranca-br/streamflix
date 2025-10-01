@@ -1,0 +1,19 @@
+.carousel {
+  margin-bottom: 18px;
+}
+
+.carousel-title {
+  color: #fff;
+  margin: 6px 0 8px;
+}
+
+.carousel-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.carousel-row::-webkit-scrollbar {
+  height: 8px;
+}

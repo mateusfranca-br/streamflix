@@ -1,0 +1,44 @@
+.banner {
+  height: 52vh; /* altura ocupa 52% da altura da tela */
+  background-size: cover; /* imagem cobre toda a área */
+  background-position: center; /* centraliza a imagem */
+  color: #fff; /* texto branco */
+  display: flex;
+  align-items: flex-end; /* conteúdo vai para a parte de baixo */
+  padding: 40px 0;
+  margin-bottom: 24px;
+}
+
+.banner-inner {
+  display: flex;
+  align-items: flex-end; /* alinha os elementos na base */
+}
+
+.banner-content {
+  max-width: 720px; /* limita a largura do conteúdo */
+}
+
+.banner h1 {
+  font-size: 2.2rem; /* tamanho do título */
+  margin: 0 0 10px;
+}
+
+.banner-overview {
+  color: rgba(255, 255, 255, 0.9); /* branco mais suave */
+  margin-bottom: 14px;
+}
+
+.banner-actions .nf-btn {
+  margin-right: 10px; /* espaçamento entre os botões */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .banner {
+    height: 36vh; /* reduz a altura */
+    padding: 20px;
+  }
+  .banner h1 {
+    font-size: 1.4rem; /* título menor em celular/tablet */
+  }
+}
