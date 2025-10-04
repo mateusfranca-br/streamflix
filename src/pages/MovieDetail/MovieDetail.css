@@ -1,0 +1,28 @@
+.movie-detail {
+  min-height: 100vh;
+  color: white;
+}
+
+.movie-detail-banner {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.movie-detail-info {
+  max-width: 700px;
+}
+
+.movie-detail-info h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.movie-detail-info p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}

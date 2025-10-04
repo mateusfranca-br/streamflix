@@ -1,44 +1,45 @@
 .banner {
-  height: 52vh; /* altura ocupa 52% da altura da tela */
-  background-size: cover; /* imagem cobre toda a área */
-  background-position: center; /* centraliza a imagem */
-  color: #fff; /* texto branco */
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  align-items: flex-end; /* conteúdo vai para a parte de baixo */
-  padding: 40px 0;
-  margin-bottom: 24px;
+  align-items: flex-end;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+  color: white;
+  text-decoration: none;
 }
 
-.banner-inner {
-  display: flex;
-  align-items: flex-end; /* alinha os elementos na base */
+.banner-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.banner-content {
-  max-width: 720px; /* limita a largura do conteúdo */
+.banner.fade {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
 }
 
-.banner h1 {
-  font-size: 2.2rem; /* tamanho do título */
-  margin: 0 0 10px;
+.banner.fade .banner-info {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.banner-overview {
-  color: rgba(255, 255, 255, 0.9); /* branco mais suave */
-  margin-bottom: 14px;
+.banner .banner-info {
+  max-width: 600px;
+  margin: 40px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.banner-actions .nf-btn {
-  margin-right: 10px; /* espaçamento entre os botões */
+.banner .banner-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .banner {
-    height: 36vh; /* reduz a altura */
-    padding: 20px;
-  }
-  .banner h1 {
-    font-size: 1.4rem; /* título menor em celular/tablet */
-  }
+.banner .banner-info p {
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
